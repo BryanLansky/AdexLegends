@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    padding: 0 0 10px 0;
+}
+
+.logo{
+    margin: 0 10px;
+}
+
+.name{
+    margin-bottom: -2px;
+}
+
+.nav{
+    width: 75%;
+    margin: auto;
+    float: left;
+}
+
+.nav a{
+    font-size: 18px;
+    width: 15%;
+    padding: 15px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav #legends{
+    border-bottom: 5px solid white;
+}
+
+.content{
+    background: url(./assets/assets/legends_background.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    height: auto;
+}
+
+.content .img{
+    display: flex;
+    justify-content: center;
+}
+
+.content .img img{
+    margin-top: 100px;
+    width: 200px;
+}
+
+.legends1_description, .legends2_description, .legends3_description, .legends4_description, .legends5_description, .legends6_description{
+    padding: 5px 40px 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.67);
+    display: flex;
+    width: 700px;
+}
+
+.legends1_description #skyline, .legends3_description #kris, .legends5_description #bubble{
+    padding-bottom: 15px;
+    text-align: right;
+    font-size: 48px;
+    border-bottom: 5px solid white;
+}
+
+.legends2_description #seeker, .legends4_description #okita, .legends6_description #chimera{
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 48px;
+    border-bottom: 5px solid white;
+}
+
+.legends1_description .left_description, .legends2_description .left_description, .legends3_description .left_description, .legends4_description .left_description, .legends5_description .left_description, .legends6_description .left_description{
+    width: 50%;
+}
+
+.left_description .text{
+    padding-top: 5px;
+}
+
+.legends1_description .right_description, .legends2_description .right_description, .legends3_description .right_description, .legends4_description .right_description, .legends5_description .right_description, .legends6_description .right_description{
+    width: 50%;
+    text-align: justify;
+}
+
+.legends_1, .legends_2, .legends_3, .legends_4, .legends_5, .legends_6{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legends_img_1 img, .legends_img_3 img, .legends_img_5 img, .legends_img_6 img{
+    width: 300px;
+}
+
+.legends_img_2 img, .legends_img_4 img{
+    margin-left: 50px;
+    width: 200px;
+}
+
+#footer{
+    height: 214px;
+    background-color: #1d1c1c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .logo {
+        text-align: center;
+    }
+
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav a{
+        width:13%;
+        float: left;
+    }
+
+    .content{
+        background: url(./assets/assets/legends_background.jpg);
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        height: auto;
+    }
+    
+    .content .img{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content .img img{
+        margin-top: 150px;
+        width: 250px;
+    }
+
+    .legends1_description, .legends2_description, .legends3_description, .legends4_description, .legends5_description, .legends6_description{
+        padding: 5px 40px 20px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.67);
+        display: flex;
+        width: 700px;
+    }
+    
+    .legends1_description, .legends3_description, .legends5_description{
+        margin-right: 10px;
+    }
+
+    .legends2_description, .legends4_description, .legends6_description{
+        margin-left: 10px;
+    }
+
+    .legends1_description #skyline, .legends3_description #kris, .legends5_description #bubble{
+        padding-bottom: 15px;
+        text-align: right;
+        font-size: 40px;
+        border-bottom: 5px solid white;
+    }
+    
+    .legends2_description #seeker, .legends4_description #okita, .legends6_description #chimera{
+        padding-bottom: 15px;
+        text-align: left;
+        font-size: 40px;
+        border-bottom: 5px solid white;
+    }
+    
+    .legends1_description .left_description, .legends2_description .left_description, .legends3_description .left_description, .legends4_description .left_description, .legends5_description .left_description, .legends6_description .left_description{
+        width: 50%;
+    }
+    
+    .left_description .text{
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    
+    .legends1_description .right_description, .legends2_description .right_description, .legends3_description .right_description, .legends4_description .right_description, .legends5_description .right_description, .legends6_description .right_description{
+        width: 50%;
+        text-align: justify;
+    }
+    
+    .right_description p{
+        font-size: 14px;
+    }
+
+    .legends_1, .legends_2, .legends_3, .legends_4, .legends_5, .legends_6{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .legends_img_1 img, .legends_img_3 img, .legends_img_5 img, .legends_img_6 img{
+        width: 300px;
+    }
+    
+    .legends_img_2 img, .legends_img_4 img{
+        margin-right: 10px;
+        margin-left: 50px;
+        width: 200px;
+    }
+
+    #footer{
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .header{
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .name{
+        margin-left: -30px;
+        margin-bottom: -4px;
+    }
+
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav a{
+        width:13%;
+        float: left;
+    }
+
+    .content{
+        background: url(./assets/assets/legends_background.jpg);
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        height: auto;
+    }
+    
+    .content .img{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content .img img{
+        margin-top: 150px;
+        width: 200px;
+    }
+
+    
+    .legends1_description, .legends2_description, .legends3_description, .legends4_description, .legends5_description, .legends6_description{
+        padding: 5px 40px 20px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.67);
+        display: flex;
+        width: 700px;
+    }
+    
+    .legends1_description, .legends3_description, .legends5_description{
+        margin-right: 10px;
+    }
+
+    .legends2_description, .legends4_description, .legends6_description{
+        margin-left: 10px;
+    }
+
+    .legends1_description #skyline, .legends3_description #kris, .legends5_description #bubble{
+        padding-bottom: 15px;
+        text-align: right;
+        font-size: 40px;
+        border-bottom: 5px solid white;
+    }
+    
+    .legends2_description #seeker, .legends4_description #okita, .legends6_description #chimera{
+        padding-bottom: 15px;
+        text-align: left;
+        font-size: 40px;
+        border-bottom: 5px solid white;
+    }
+    
+    .legends1_description .left_description, .legends2_description .left_description, .legends3_description .left_description, .legends4_description .left_description, .legends5_description .left_description, .legends6_description .left_description{
+        width: 50%;
+    }
+    
+    .left_description .text{
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    
+    .legends1_description .right_description, .legends2_description .right_description, .legends3_description .right_description, .legends4_description .right_description, .legends5_description .right_description, .legends6_description .right_description{
+        width: 50%;
+        text-align: justify;
+    }
+    
+    .right_description p{
+        font-size: 14px;
+    }
+
+    .legends_1, .legends_2, .legends_3, .legends_4, .legends_5, .legends_6{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .legends_img_1 img, .legends_img_3 img, .legends_img_5 img, .legends_img_6 img{
+        width: 300px;
+    }
+    
+    .legends_img_2 img, .legends_img_4 img{
+        margin-right: 10px;
+        margin-left: 50px;
+        width: 200px;
+    }
+    
+    #footer{
+        height: 50px;
+        font-size: 12px;
+    }
+}

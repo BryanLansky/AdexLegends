@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEX Legend</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./assets/assets/1.png" width="85 px"> 
+            <img src="./assets/assets/logo1.png" width="85 px" class="name">
+        </div>
+        <div class="nav">
+            <a href="./home.html">Home</a>
+            <a href="./legends.html">Legends</a>
+            <a href="./maps.html">Maps</a>
+            <a href="./about.html">About Us</a>
+            <a href="./registration.html" id="registration">Registration</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="signup">Sign Up</div>
+        <form action="./home2.html" onsubmit="return validation()">
+            <div class="form">
+                <div class="container">
+                    <div class="label">
+                        <label for="full_Name">Full Name &emsp;&emsp;&emsp;&emsp; : </label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="full_Name" placeholder="ex : Krestella Margaretta"> <br>
+                        <label id="errfullname" class="error"></label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="label">
+                        <label for="email">Email &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: </label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="email" placeholder="ex : bryan.lansky@gmail.com"><br>
+                        <label id="erremail" class="error"></label>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="label">
+                        <label for="username">Username &emsp;&emsp;&emsp;&emsp;&nbsp;: </label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="username" placeholder="ex : pollylolly123 (alphanum)"><br>
+                        <label id="errusername" class="error"></label>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="label">
+                        <label for="password">Password &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;: </label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" placeholder="*8 length & at least 1 number"><br>
+                        <label id="errpassword" class="error"></label>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="label">
+                        <label for="confirm_password">Confirm&emsp;&emsp;&emsp;&emsp;&emsp13;&emsp;: </label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="confirm_password" placeholder="*8 length & at least 1 number"><br>
+                        <label id="errconfirm" class="error"></label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="label">
+                        <label>Gender &emsp;&emsp;&emsp;&emsp;&emsp13;&emsp;:</label>
+                    </div>
+                    <div class="input_gender">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label><br>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="label">Address &emsp; &emsp;&emsp; &emsp; &emsp;:</div>
+                    <div class="input">
+                        <textarea id="address" cols="42" rows="5" placeholder="Your Address"></textarea><br>
+                        <label id="erraddress"  class="error"></label>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="label">
+                        <label for="server">Server&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+                    </div>
+                    <div class="input">
+                        <select id="server">
+                            <option value="">----- Select Server -----</option>
+                            <option value="Asia">Asia</option>
+                            <option value="America">America</option>
+                            <option value="Europe">Europe</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Registration" id="submit">
+            </div>
+        </form>
+    </div>
+    <div id="footer">
+        Copyright © 2022 [ADEX Legends]. Designed by Krestella Margareta & Bryan Lansky
+    </div>
+</body>
+<script src="./validation.js"></script>
+</html>
